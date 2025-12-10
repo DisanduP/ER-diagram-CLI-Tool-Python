@@ -1,0 +1,30 @@
+erDiagram
+    CUSTOMER ||--o{ ACCOUNT : owns
+    ACCOUNT ||--o{ TRANSACTION : has
+
+    CUSTOMER {
+        int customer_id PK
+        string first_name
+        string last_name
+        string email
+        string phone
+        date date_of_birth
+    }
+    ACCOUNT {
+        int account_id PK
+        int customer_id FK
+        string account_type
+        string account_number
+        decimal balance
+        date created_date
+        string status
+    }
+    TRANSACTION {
+        int transaction_id PK
+        int account_id FK
+        string transaction_type
+        decimal amount
+        date transaction_date
+        string description
+        decimal balance_after
+    }

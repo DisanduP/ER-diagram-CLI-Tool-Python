@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-12-10T11:26:49.030383Z" agent="ER-CLI" version="21.0.0">
+  <diagram name="ER Diagram" id="diagram_1">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="CUSTOMER" value="CUSTOMER" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="162" as="geometry"/>
+        </mxCell>
+        <mxCell id="CUSTOMER_attr0" value="int customer_id PK" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CUSTOMER">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="CUSTOMER_attr1" value="string first_name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CUSTOMER">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="CUSTOMER_attr2" value="string last_name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CUSTOMER">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="CUSTOMER_attr3" value="string email" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CUSTOMER">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="CUSTOMER_attr4" value="string phone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CUSTOMER">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="CUSTOMER_attr5" value="date date_of_birth" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CUSTOMER">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT" value="ACCOUNT" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="590" y="40" width="200" height="184" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT_attr0" value="int account_id PK" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ACCOUNT">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT_attr1" value="int customer_id FK" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ACCOUNT">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT_attr2" value="string account_type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ACCOUNT">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT_attr3" value="string account_number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ACCOUNT">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT_attr4" value="decimal balance" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ACCOUNT">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT_attr5" value="date created_date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ACCOUNT">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="ACCOUNT_attr6" value="string status" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ACCOUNT">
+          <mxGeometry y="162" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION" value="TRANSACTION" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="40" width="200" height="184" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION_attr0" value="int transaction_id PK" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TRANSACTION">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION_attr1" value="int account_id FK" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TRANSACTION">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION_attr2" value="string transaction_type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TRANSACTION">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION_attr3" value="decimal amount" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TRANSACTION">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION_attr4" value="date transaction_date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TRANSACTION">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION_attr5" value="string description" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TRANSACTION">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="TRANSACTION_attr6" value="decimal balance_after" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TRANSACTION">
+          <mxGeometry y="162" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="rel25" value="owns" style="edgeStyle=curvedEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;routing=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="CUSTOMER" target="ACCOUNT">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="rel26" value="has" style="edgeStyle=curvedEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;routing=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ACCOUNT" target="TRANSACTION">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
